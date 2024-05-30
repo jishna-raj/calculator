@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="text-center text-primary">calculator</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <input type="text" id="result" class="btn btn-light" placeholder="0" onclick="display()" style="text-align: right;">
+            <div class="d-flex">
+                <button class="btn btn-success p-1 w-50" id="b1" onclick="clearAll()">AC</button>
+                <button class="btn btn-success p-1 w-50" id="b1" onclick="back()">Del</button>
+                <button class="btn btn-success p-1 w-50" id="b1" onclick="display('%')">%</button>
+
+            </div>
+            
+            <div class="buttons">
+              <button onclick="display(7)">7</button>
+              <button onclick="display(8)" >8</button>
+              <button onclick="display(9)">9</button>
+              <button onclick="display('+')">+</button>
+              <button onclick="display(4)">4</button>
+              <button onclick="display(5)">5</button>
+              <button onclick="display(6)">6</button>
+              <button onclick="display('-')">-</button>
+              <button onclick="display(1)">1</button>
+              <button onclick="display(2)">2</button>
+              <button onclick="display(3)">3</button>
+              <button onclick="display('*')">*</button>
+              <button onclick="display(0)">0</button>
+              <button onclick="display('.')">.</button>
+              <button onclick="equal()">=</button>
+              <button onclick="display('/')">/</button>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    
+</body>
+<script src="./cal.js"></script>
+</html>
